@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - ADDP Monsefú</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo-area">
+                <img src="img/logoaddp.png" alt="Logo ADDP" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-t">Asambleas de Dios del Perú</span>
+                    <span class="sub-t">MONSEFÚ</span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                <li><a href="ubicanos.html">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CABECERA DE PÁGINA -->
+        <section class="page-header header-proyectos">
+            <div class="overlay-blue">
+                <div class="container animate-item">
+                    <h1>Nuestros <span class="txt-gold">Proyectos</span></h1>
+                    <div class="underline-gold"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETALLE DEL PROYECTO PRINCIPAL -->
+        <section class="projects-detail-section container">
+            <div class="section-header">
+                <h2 class="title-main">Proyectos en <span class="txt-red">Desarrollo</span></h2>
+                <h3 class="subtitle-page">Propuesta Pedagógica</h3>
+                <div class="underline-gold"></div>
+            </div>
+
+            <div class="project-card animate-item">
+                <div class="project-image">
+                    <img src="img/proyecto-colegio.png" alt="I.E. Luz y Verdad">
+                    <div class="status-badge">EN PLANIFICACIÓN</div>
+                </div>
+
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Institución Educativa Cristiana Evangélica <br>
+                        <span class="highlight">"Luz y Verdad"</span>
+                    </h3>
+                    <p class="project-text">Un modelo de educación integral que articula la excelencia académica con la formación en valores cristianos para el distrito de <strong>Monsefú</strong>.</p>
+                    <p class="project-text">Buscamos formar personas íntegras, con identidad y propósito, comprometidas con Dios, la familia y la sociedad.</p>
+
+                    <div class="quote-container">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="quote-text">"Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él." — Proverbios 22:6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISIÓN, VISIÓN Y VALORES -->
+        <section class="mision-vision-section bg-light">
+            <div class="container">
+                <div class="mision-vision-grid">
+                    <div class="mv-card animate-item">
+                        <div class="mv-icon-circle"><i class="fas fa-eye"></i></div>
+                        <h3 class="title-sub">Visión <span>Institucional</span></h3>
+                        <p>Ser reconocidos en Lambayeque por la excelencia académica y formación espiritual, siendo luz y verdad en la comunidad.</p>
+                    </div>
+
+                    <div class="mv-card animate-item">
+                        <div class="mv-icon-circle"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="title-sub">Misión <span>Institucional</span></h3>
+                        <p>Brindar educación de calidad basada en principios bíblicos que promueva el desarrollo espiritual e intelectual.</p>
+                    </div>
+                </div>
+
+                <!-- VALORES GRID -->
+                <div class="valores-container">
+                    <h2 class="title-main text-center">Valores <span class="txt-red">Institucionales</span></h2>
+                    <div class="valores-grid">
+                        <div class="valor-item"><i class="fas fa-heart"></i> <h4>Amor</h4></div>
+                        <div class="valor-item"><i class="fas fa-bible"></i> <h4>Verdad</h4></div>
+                        <div class="valor-item"><i class="fas fa-balance-scale"></i> <h4>Justicia</h4></div>
+                        <div class="valor-item"><i class="fas fa-shield-alt"></i> <h4>Honestidad</h4></div>
+                        <div class="valor-item"><i class="fas fa-hand-holding-heart"></i> <h4>Solidaridad</h4></div>
+                        <div class="valor-item"><i class="fas fa-check-circle"></i> <h4>Responsabilidad</h4></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APOYO Y DONACIONES -->
+        <section class="support-section container animate-item">
+            <div class="support-wrapper">
+                <h2 class="title-main">Apoyo <span class="txt-red">Voluntario</span></h2>
+                <div class="underline-gold"></div>
+                <p class="bible-verse-dark">"Cada uno dé como propuso en su corazón... porque Dios ama al dador alegre." <br> <strong>2 Corintios 9:7</strong></p>
+                
+                <div class="support-buttons">
+                    <button class="btn-support btn-yape-style" id="btnOpenYapeProyectos">
+                        <i class="fas fa-mobile-alt"></i> Donar con Yape
+                    </button>
+                    <button class="btn-support btn-bank-style" id="openBankModal">
+                        <i class="fas fa-university"></i> Números de Cuenta
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVANCE DE OBRA / GALERÍA -->
+        <section class="project-progress-section container">
+            <div class="section-header">
+                <h2 class="title-main">Avance del <span class="txt-red">Templo</span></h2>
+                <div class="underline-gold"></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Estado: <strong>Cimentación y Estructuras</strong></span>
+                    <span>20%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 20%;"></div>
+                </div>
+            </div>
+
+            <!-- GALERÍA DINÁMICA -->
+            <div class="gallery-wrapper animate-item">
+                <div class="main-slider">
+                    <button class="slider-nav prev" onclick="nextSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="main-display" onclick="openLightbox()">
+                        <img src="img/avance1.jpeg" id="current-img" alt="Avance">
+                        <div class="hover-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <button class="slider-nav next" onclick="nextSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="thumbnail-carousel">
+                    <!-- Las miniaturas se pueden generar con JS o dejar estáticas como las tenías -->
+                    <img src="img/avance1.jpeg" class="thumb active" onclick="changeImg(this)">
+                    <img src="img/avance2.jpeg" class="thumb" onclick="changeImg(this)">
+                    <img src="img/avance3.jpeg" class="thumb" onclick="changeImg(this)">
+                    <!-- ... más miniaturas ... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO DE CONSTRUCCIÓN -->
+        <section class="project-video-section container animate-item">
+            <div class="video-flex-layout">
+                <div class="video-text">
+                    <span class="tag">NUESTRA CONSTRUCCIÓN</span>
+                    <h3>Visualiza el progreso de nuestra nueva casa de oración</h3>
+                    <p>Cada columna y ladrillo representa un testimonio del poder de Dios y del esfuerzo unido de Su pueblo.</p>
+                </div>
+                <div class="video-preview-card" onclick="openProjectVideoModal()">
+                    <img src="img/miniatura-construccion.jpeg" alt="Video Avance">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="txt-gold">Contacto</h4>
+                <a href="tel:+51937510101" class="phone-link">+51 937 510 101</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="txt-gold">Redes</h4>
+                <div class="social-links">
+                    <a href="https://wa.me/51937510101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <button class="btn-yape" id="btnOpenYapeFooter">Donar con Yape</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Las Asambleas de Dios del Perú — <strong>MONSEFÚ</strong></p>
+            <small>© 2026 Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- MODALES (Yape, Bancos, Video, Lightbox) -->
+    <!-- Se mantienen ocultos por CSS -->
+    <div id="yapeModal" class="modal-custom">...</div>
+    <div id="bankModal" class="modal-custom">...</div>
+    <div id="projectVideoModal" class="modal-custom">...</div>
+    <div id="lightbox" class="lightbox-overlay">...</div>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/51937510101" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script src="js/proyectos.js"></script> <!-- Recomiendo mover la lógica de video/galería a un archivo aparte -->
+</body>
+</html>

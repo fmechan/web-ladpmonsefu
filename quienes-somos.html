@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - ADDP Monsefú</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo-area">
+                <img src="img/logoaddp.png" alt="Logo ADDP" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-t">Asambleas de Dios del Perú</span>
+                    <span class="sub-t">MONSEFÚ</span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html" class="active">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ubicanos.html">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CABECERA DE PÁGINA -->
+        <section class="page-header header-about">
+            <div class="overlay-blue">
+                <div class="container animate-item">
+                    <h1>Quiénes <span class="txt-gold">Somos</span></h1>
+                    <div class="underline-gold"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN INTRODUCTORIA -->
+        <section class="about-intro container animate-item">
+            <div class="about-flex">
+                <div class="about-text-main">
+                    <p class="lead-text">
+                        <strong>Las Asambleas de Dios del Perú — Monsefú</strong> es una comunidad de fe comprometida con la transformación de vidas a través del Evangelio de Jesucristo.
+                    </p>
+                    <p>Buscamos adorar a Dios con excelencia, edificar a los creyentes en la Palabra y servir a nuestra comunidad de Monsefú con amor y dedicación, bajo la guía del Espíritu Santo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISIÓN Y VISIÓN -->
+        <section class="mission-vision-section bg-light">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Misión -->
+                    <div class="about-card accent-blue animate-item">
+                        <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Nuestra <span>Misión</span></h3>
+                        <p>Somos una iglesia revestida del poder del Espíritu Santo que cumple la Gran Comisión, adora a Dios en comunión, practica Su Palabra y sirve con un enfoque prioritario en la familia.</p>
+                    </div>
+
+                    <!-- Visión -->
+                    <div class="about-card accent-gold animate-item">
+                        <div class="card-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Nuestra <span>Visión</span></h3>
+                        <p>Ser una iglesia llena del Espíritu Santo y guiada por la Biblia que edifica el cuerpo de Cristo, fortalece la familia y contribuye a la transformación de la sociedad peruana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTORIA CON VIDEO -->
+        <section id="nuestra-historia" class="history-section container">
+            <div class="section-header">
+                <h2 class="title-main">Nuestra <span class="txt-red">Historia</span></h2>
+                <div class="underline-gold"></div>
+            </div>
+
+            <div class="history-layout">
+                <div class="history-content animate-item">
+                    <span class="agenda-tag">TRAYECTORIA DE FE</span>
+                    <p>La iglesia <strong>"Camino a la Redención"</strong> en Monsefú inició el 23 de octubre de 1999, impulsada por un milagro extraordinario: la sanidad de la niña Danac Guzmán Puicón, quien había sido desahuciada por la medicina a los 7 años.</p>
+                    <p>Dios utilizó al hermano Segundo Mauricio para compartir el evangelio con la familia Guzmán Puicón en su momento de mayor aflicción. Lo que comenzó como un grupo de oración familiar, hoy es una congregación sólida que sigue testificando del poder de Dios.</p>
+                </div>
+
+                <div class="history-media animate-item">
+                    <div class="video-preview-box" onclick="openVideoModal()">
+                        <img src="img/historia.jpeg" alt="Reseña Histórica">
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Ver Reseña</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALORES -->
+        <section id="valores" class="values-section bg-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title-main txt-white">Nuestros <span class="txt-gold">Valores</span></h2>
+                    <div class="underline-gold"></div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card-dark">
+                        <i class="fas fa-heart icon-red"></i>
+                        <h4>Amor</h4>
+                        <p>Mateo 22:36-40</p>
+                    </div>
+                    <div class="value-card-dark">
+                        <i class="fas fa-hand-holding-heart icon-blue"></i>
+                        <h4>Servicio</h4>
+                        <p>Mateo 20:28</p>
+                    </div>
+                    <div class="value-card-dark">
+                        <i class="fas fa-id-card icon-gold"></i>
+                        <h4>Identidad</h4>
+                        <p>1 Pedro 2:9</p>
+                    </div>
+                    <div class="value-card-dark">
+                        <i class="fas fa-shield-alt icon-green"></i>
+                        <h4>Integridad</h4>
+                        <p>Proverbios 11:3</p>
+                    </div>
+                    <div class="value-card-dark">
+                        <i class="fas fa-dove icon-purple"></i>
+                        <h4>Humildad</h4>
+                        <p>Filipenses 2:3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE MOMENTOS -->
+        <section id="galeria" class="gallery-section container">
+            <div class="section-header">
+                <h2 class="title-main">Momentos que <span class="txt-red">nos Unen</span></h2>
+                <div class="underline-gold"></div>
+            </div>
+
+            <div class="gallery-container animate-item">
+                <div class="gallery-main">
+                    <button class="nav-arrow prev" onclick="nextSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-box" onclick="openLightbox()">
+                        <img src="img/galeria1.jpeg" id="current-img" alt="Iglesia ADDP">
+                        <div class="zoom-tag"><i class="fas fa-search-plus"></i> Ampliar</div>
+                    </div>
+                    <button class="nav-arrow next" onclick="nextSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="gallery-thumbs">
+                    <!-- Se generan dinámicamente o se mantienen 10 miniaturas -->
+                    <img src="img/galeria1.jpeg" class="thumb active" onclick="changeImg(this)">
+                    <img src="img/galeria2.jpeg" class="thumb" onclick="changeImg(this)">
+                    <img src="img/galeria3.jpeg" class="thumb" onclick="changeImg(this)">
+                    <img src="img/galeria4.jpeg" class="thumb" onclick="changeImg(this)">
+                    <img src="img/galeria5.jpeg" class="thumb" onclick="changeImg(this)">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="txt-gold">Contacto</h4>
+                <a href="tel:+51937510101" class="phone-link">+51 937 510 101</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="txt-gold">Redes</h4>
+                <div class="social-links">
+                    <a href="https://wa.me/51937510101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://facebook.com/..." target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <button class="btn-yape" id="btnOpenYape">Donar con Yape</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Las Asambleas de Dios del Perú — <strong>MONSEFÚ</strong></p>
+            <small>© 2026 Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- MODAL VIDEO HISTORIA -->
+    <div id="videoModal" class="modal-video" onclick="closeVideoModalOutside(event)">
+        <div class="modal-video-content">
+            <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+            <div class="video-wrapper">
+                <video id="historyVideo" controls>
+                    <source src="video/resena-historia.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX IMÁGENES -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/51937510101" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script>
+        // Lógica específica para Video e Historia
+        function openVideoModal() {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("historyVideo");
+            modal.style.display = "flex";
+            video.play();
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("historyVideo");
+            modal.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        function closeVideoModalOutside(e) {
+            if (e.target.id === "videoModal") closeVideoModal();
+        }
+
+        // Lógica simple de Galería
+        function changeImg(element) {
+            document.getElementById("current-img").src = element.src;
+            document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active"));
+            element.classList.add("active");
+        }
+
+        function openLightbox() {
+            const lb = document.getElementById("lightbox");
+            const lbImg = document.getElementById("lightbox-img");
+            lbImg.src = document.getElementById("current-img").src;
+            lb.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+</body>
+</html>

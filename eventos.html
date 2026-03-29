@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - ADDP Monsefú</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FullCalendar CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo-area">
+                <img src="img/logoaddp.png" alt="Logo ADDP" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-t">Asambleas de Dios del Perú</span>
+                    <span class="sub-t">MONSEFÚ</span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html" class="active">Eventos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ubicanos.html">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CABECERA DE PÁGINA -->
+        <section class="page-header header-eventos">
+            <div class="overlay-blue">
+                <div class="container animate-item">
+                    <h1>Nuestros <span class="txt-gold">Eventos</span></h1>
+                    <div class="underline-gold"></div>
+                    <p class="header-subtitle">Crecer en comunión y extender el amor de Dios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="about-description container">
+            <div class="about-text animate-item">
+                <p>En <strong>Las Asambleas de Dios del Perú — Monsefú</strong>, creemos que cada reunión es una oportunidad para crecer juntos. Buscamos fortalecer la comunión entre hermanos y extender el amor de Dios a nuestra comunidad. <strong>¡Te invitamos a ser parte activa de nuestra agenda espiritual!</strong></p>
+            </div>
+        </section>
+
+        <!-- CALENDARIO -->
+        <section class="calendar-section container">
+            <div class="section-header">
+                <h2 class="title-main">Calendario de <span class="txt-red">Actividades</span></h2>
+                <div class="underline-gold"></div>
+            </div>
+
+            <div class="calendar-card animate-item">
+                <div class="calendar-filter-bar">
+                    <span><i class="fas fa-filter icon-gold"></i> Filtrar:</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="cultos">Cultos</button>
+                        <button class="filter-btn" data-filter="jovenes">Jóvenes</button>
+                        <button class="filter-btn" data-filter="misiones">Misiones</button>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="title-main">TESTIMONIOS <span class="txt-red">IMPACTANTES</span></h2>
+                    <div class="underline-gold"></div>
+                </div>
+
+                <div class="testimonials-wrapper animate-item">
+                    <div class="testimonials-selectors">
+                        <div class="testimonial-select active" data-id="1">
+                            <img src="img/galeria1.jpeg" alt="Testimonio 1">
+                            <span class="flag"><img src="https://flagcdn.com/w40/pe.png" alt="PE"></span>
+                        </div>
+                        <div class="testimonial-select" data-id="2">
+                            <img src="img/galeria2.jpeg" alt="Testimonio 2">
+                            <span class="flag"><img src="https://flagcdn.com/w40/pe.png" alt="PE"></span>
+                        </div>
+                        <div class="testimonial-select" data-id="3">
+                            <img src="img/galeria3.jpeg" alt="Testimonio 3">
+                            <span class="flag"><img src="https://flagcdn.com/w40/pe.png" alt="PE"></span>
+                        </div>
+                    </div>
+
+                    <article class="testimonial-main-card">
+                        <div id="active-testimonial-content">
+                            <!-- JS cargará el contenido aquí -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="escribenos-section container">
+            <div class="escribenos-grid">
+                <div class="form-column animate-item">
+                    <h2 class="title-escribenos">ESCRÍBENOS</h2>
+                    <p>Si tienes preguntas o necesitas oración, no dudes en contactarnos.</p>
+
+                    <form id="whatsappForm" class="contacto-form">
+                        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                        <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        <input type="email" id="email" placeholder="Email (Opcional)">
+                        <textarea id="mensaje" placeholder="Tu mensaje o pedido de oración" rows="4" required></textarea>
+                        <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+
+                <div class="info-column animate-item">
+                    <div class="info-box">
+                        <h3 class="info-title">Información</h3>
+                        <div class="info-item"><i class="fas fa-envelope"></i> addpmonsefu@gmail.com</div>
+                        <div class="info-item"><i class="fas fa-phone-alt"></i> +51 937 510 101</div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i> Miguel Grau 856, Monsefú</div>
+                        <div class="info-item"><i class="far fa-clock"></i> 6:30 pm - 9:00 pm</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="txt-gold">Contacto</h4>
+                <a href="tel:+51937510101" class="phone-link">+51 937 510 101</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="txt-gold">Redes</h4>
+                <div class="social-links">
+                    <a href="https://wa.me/51937510101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <button class="btn-yape" id="btnOpenYape">Donar con Yape</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Las Asambleas de Dios del Perú — <strong>MONSEFÚ</strong></p>
+            <small>© 2026 Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- MODAL YAPE -->
+    <div id="yapeModal" class="modal-custom">
+        <div class="modal-content">
+            <span class="close-yape" id="btnCloseYape">&times;</span>
+            <div class="yape-qr-container">
+                <img src="img/qryape.jpeg" alt="QR Yape" class="yape-qr-img">
+                <h3>Ruben Eliazar Huaman Zambrano</h3>
+                <p>Escanea para realizar tu ofrenda.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/51937510101" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/es.js'></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

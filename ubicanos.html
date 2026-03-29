@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubícanos - ADDP Monsefú</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo-area">
+                <img src="img/logoaddp.png" alt="Logo ADDP" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-t">Asambleas de Dios del Perú</span>
+                    <span class="sub-t">MONSEFÚ</span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ubicanos.html" class="active">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CABECERA DE PÁGINA -->
+        <section class="page-header header-contact">
+            <div class="overlay-blue">
+                <div class="container animate-item">
+                    <h1>Ubí<span>canos</span></h1>
+                    <div class="underline-gold"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO Y MAPA -->
+        <section class="contact-map-section container">
+            <div class="contact-wrapper">
+                
+                <!-- Tarjeta de Información -->
+                <div class="info-card animate-item">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <h4>Nuestra Dirección</h4>
+                            <p>Calle Miguel Grau 856, <br>Monsefú, Chiclayo, Lambayeque</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Teléfono Pastor</h4>
+                            <p>+51 937 510 101</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario de Reuniones</h4>
+                            <p>Martes, Jueves y Domingos <br><strong>7:30 PM</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="directions-action">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+Miguel+Grau+856+Monsefú"
+                            target="_blank" class="btn-directions">
+                            <i class="fas fa-route"></i> ¿CÓMO LLEGAR?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa embebido -->
+                <div class="map-container animate-item">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.16484347718!2d-79.873238!3d-6.885614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cf7f654b423ef%3A0x6d9f52f750e30d7b!2sMiguel%20Grau%20856%2C%20Monsef%C3%BA%2014006!5e0!3m2!1ses!2spe!4v1710000000000!5m2!1ses!2spe"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FACHADA Y VERSÍCULO -->
+        <section class="church-detail bg-light">
+            <div class="container">
+                <div class="iglesia-grid">
+                    <div class="iglesia-foto-container animate-item">
+                        <div class="iglesia-foto shadow-img">
+                            <img src="img/fachada.png" alt="Fachada ADDP Monsefú">
+                            <div class="foto-caption">
+                                <p class="caption-tag"><i class="fas fa-church"></i> Nuestra Casa</p>
+                                <h3 class="caption-address">Calle Miguel Grau 856</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="iglesia-versiculo animate-item">
+                        <div class="quote-wrapper">
+                            <i class="fas fa-quote-left quote-icon-dark"></i>
+                            <p class="texto-biblico">
+                                "Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del
+                                Padre, y del Hijo, y del Espíritu Santo."
+                            </p>
+                            <div class="cita-container">
+                                <span class="cita-biblica">Mateo 28:19</span>
+                                <div class="separador-decorativo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER ESTANDARIZADO -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="txt-gold">Contacto</h4>
+                <p>Pastor Ruben Huaman</p>
+                <a href="tel:+51937510101" class="phone-link">+51 937 510 101</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="txt-gold">Nuestras Redes</h4>
+                <div class="social-links">
+                    <a href="https://wa.me/51937510101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.facebook.com/people/Addp-Monsefú/100071939246146/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="txt-gold">Apoyo Institucional</h4>
+                <button class="btn-yape" id="btnOpenYape">Donar con Yape</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Las Asambleas de Dios del Perú — <strong>MONSEFÚ</strong></p>
+            <small>© 2026 Todos los derechos reservados.</small>
+            <p class="verse-footer">"Porque de tal manera amó Dios al mundo..." — Juan 3:16</p>
+        </div>
+    </footer>
+
+    <!-- MODAL YAPE -->
+    <div id="yapeModal" class="modal-overlay">
+        <div class="modal-content yape-card">
+            <span class="close-modal">&times;</span>
+            <div class="yape-body">
+                <img src="img/qryape.jpeg" alt="QR Yape Ruben Eliazar" class="qr-img">
+                <h3>Ruben Eliazar Huaman Zambrano</h3>
+                <p>Tu ofrenda ayuda a seguir extendiendo el reino de Dios.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/51937510101" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

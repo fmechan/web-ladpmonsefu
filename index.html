@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDP Monsefú - Las Asambleas de Dios del Perú</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo-area">
+                <img src="img/logoaddp.png" alt="Logo ADDP Monsefú" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-t">Asambleas de Dios del Perú</span>
+                    <span class="sub-t">MONSEFÚ</span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="ubicanos.html">Ubícanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="inicio" class="hero">
+            <video autoplay loop muted playsinline class="video-bg">
+                <source src="video/video-fondo.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+
+            <div class="hero-content animate-item">
+                <span class="badge">BIENVENIDOS</span>
+                <h1>Las Asambleas de Dios del Perú <br> <span class="txt-gold">"La ciudad del Gran Rey"</span></h1>
+                <p class="loc">Monsefú — Chiclayo — Lambayeque</p>
+                <blockquote class="verse">
+                    "Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos."
+                    <cite><span class="txt-gold">Mateo 18:20</span></cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- AGENDA / CULTOS -->
+        <section id="eventos" class="agenda-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title-main">Nuestros <span class="txt-red">Cultos</span></h2>
+                    <span class="agenda-tag">PROGRAMACIÓN SEMANAL</span>
+                    <div class="underline-gold"></div>
+                </div>
+
+                <div class="agenda-grid">
+                    <!-- Oración -->
+                    <div class="agenda-card animate-item">
+                        <div class="card-accent accent-blue"></div>
+                        <div class="card-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Tiempo de Oración</h3>
+                        <p>Buscando juntos la presencia del Señor.</p>
+                        <ul class="info-list">
+                            <li><i class="far fa-calendar-alt"></i> Martes - 7:00 PM</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Templo Central</li>
+                        </ul>
+                    </div>
+
+                    <!-- Estudio -->
+                    <div class="agenda-card animate-item">
+                        <div class="card-accent accent-gold"></div>
+                        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Estudio Bíblico</h3>
+                        <p>Creciendo en el conocimiento de la Palabra.</p>
+                        <ul class="info-list">
+                            <li><i class="far fa-calendar-alt"></i> Jueves - 7:00 PM</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Templo Central</li>
+                        </ul>
+                    </div>
+
+                    <!-- Jóvenes / Damas (Combinados para limpieza) -->
+                    <div class="agenda-card animate-item">
+                        <div class="card-accent accent-red"></div>
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h3>Sociedades</h3>
+                        <p>Jóvenes y Damas en bendición.</p>
+                        <ul class="info-list">
+                            <li><i class="far fa-calendar-alt"></i> Sábados - 8:00 PM</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Templo Central</li>
+                        </ul>
+                    </div>
+
+                    <!-- Culto Central -->
+                    <div class="agenda-card highlight-card animate-item">
+                        <div class="card-accent accent-gold-full"></div>
+                        <div class="card-icon"><i class="fas fa-star"></i></div>
+                        <h3>Culto Central</h3>
+                        <p>Gran reunión de celebración y palabra.</p>
+                        <ul class="info-list">
+                            <li><i class="far fa-calendar-alt"></i> Domingos - 6:30 PM</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Templo Central</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE EVENTOS -->
+        <section id="proximos-eventos" class="events-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title-main">Próximos <span class="txt-gold">Eventos</span></h2>
+                    <div class="underline-gold"></div>
+                </div>
+
+                <div class="events-gallery">
+                    <div class="event-item" onclick="openEventModal('img/evento1.jpeg')">
+                        <img src="img/evento1.jpeg" alt="Evento 1">
+                        <div class="overlay-gallery"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="event-item" onclick="openEventModal('img/evento2.jpeg')">
+                        <img src="img/evento2.jpeg" alt="Evento 2">
+                        <div class="overlay-gallery"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="event-item" onclick="openEventModal('img/evento3.jpeg')">
+                        <img src="img/evento3.jpeg" alt="Evento 3">
+                        <div class="overlay-gallery"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="event-item" onclick="openEventModal('img/evento4.jpeg')">
+                        <img src="img/evento4.jpeg" alt="Evento 4">
+                        <div class="overlay-gallery"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNDAMENTOS -->
+        <section id="fundamentos" class="faith-section">
+            <div class="container">
+                <div class="section-header animate-item">
+                    <h2 class="titulo-seccion">FUNDAMENTOS <span class="txt-red">DE FE</span></h2>
+                    <p>Declaración de las 16 verdades fundamentales</p>
+                    <div class="underline-gold"></div>
+                </div>
+                
+                <div class="faith-grid container">
+                    <!-- Columnas de verdades -->
+                    <div class="faith-column animate-item">
+                        <div class="item"><span>1</span> La Inspiración de las Escrituras</div>
+                        <div class="item"><span>2</span> El Único Dios Verdadero</div>
+                        <div class="item"><span>3</span> La Deidad del Señor Jesucristo</div>
+                        <div class="item"><span>4</span> La Caída del Hombre</div>
+                    </div>
+                    <div class="faith-column animate-item">
+                        <div class="item"><span>5</span> La Salvación del Hombre</div>
+                        <div class="item"><span>6</span> Las Ordenanzas de la Iglesia</div>
+                        <div class="item"><span>7</span> El Bautismo en el Espíritu Santo</div>
+                        <div class="item"><span>8</span> La Evidencia Física Inicial</div>
+                    </div>
+                    <!-- Agrega el resto de items aquí de la misma forma -->
+                </div>
+
+                <div class="btn-container">
+                    <a href="documentos/fundamentos-de-fe.pdf" class="btn-download animate-item" download>
+                        DESCARGAR EN PDF <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="txt-gold"><i class="fas fa-phone-alt"></i> Contacto</h4>
+                <p>Pastor Ruben Huaman</p>
+                <a href="tel:+51937510101" class="phone-link">+51 937 510 101</a>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="txt-gold">Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="https://wa.me/51937510101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.facebook.com/people/Addp-Monsefú/100071939246146/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="txt-gold">Apoyo</h4>
+                <button class="btn-yape" id="btnOpenYape">Donar con Yape</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <img src="img/logoaddp.png" alt="Logo ADDP" class="footer-logo">
+            <p>Las Asambleas de Dios del Perú — <strong>MONSEFÚ</strong></p>
+            <small>© 2026 Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- MODALES (Fuera del flujo principal para evitar errores de capas) -->
+    
+    <!-- Modal Galería -->
+    <div id="eventModal" class="modal-gallery" onclick="closeEventModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-img" id="imgFull">
+    </div>
+
+    <!-- Modal Yape -->
+    <div id="yapeModal" class="modal-custom">
+        <div class="modal-content">
+            <span class="close-yape" id="btnCloseYape">&times;</span>
+            <div class="yape-qr-container">
+                <img src="img/qryape.jpeg" alt="QR Yape" class="yape-qr-img">
+                <h3>Ruben Eliazar Huaman Zambrano</h3>
+                <p>Escanea el código para realizar tu ofrenda.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/51937510101" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
